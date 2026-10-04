@@ -1,7 +1,9 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+
 require './exercises/P06_SumOfTwoNumbers.php';
+
 class P06_SumOfTwoNumbersTest extends TestCase {
     public function testMain() {
         // Define the expected output
@@ -10,7 +12,7 @@ class P06_SumOfTwoNumbersTest extends TestCase {
         // Capture the output of the main method
         $this->expectOutputString($expectedOutput);
 
-        // Create an instance of P16_SumOfTwoNumbers and call the main method
+        // Create an instance of P06_SumOfTwoNumbers and call the main method
         $sumOfTwoNumbers = new P06_SumOfTwoNumbers();
         $sumOfTwoNumbers->main();
     }

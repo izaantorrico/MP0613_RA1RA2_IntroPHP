@@ -1,10 +1,31 @@
 <?php
 
-class P37_AverageOfNumbers
-{
-    public function main(): void
-    {
-        // Write your code here
-       
+class P37_AverageOfNumbers {
+    public function main(): void {
+        $stdin = $GLOBALS['STDIN'] ?? STDIN;
+        $count = 0;
+        $sum = 0;
+
+        while (true) {
+            echo "Give a number:\n";
+            $line = fgets($stdin);
+
+            if ($line === false) {
+                break;
+            }
+
+            $number = (int) trim($line);
+
+            if ($number === 0) {
+                break;
+            }
+
+            $count++;
+            $sum += $number;
+        }
+
+        $average = $count > 0 ? $sum / $count : 0;
+
+        echo "Average of the numbers: $average\n";
     }
 }

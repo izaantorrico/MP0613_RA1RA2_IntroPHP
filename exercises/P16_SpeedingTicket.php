@@ -1,12 +1,11 @@
 <?php
 
 class P16_SpeedingTicket {
-    public function main(): void {
-        // Define the speed
-        $speed = 121;
+    private int $speed = 130;
 
-        // Check if the speed exceeds the limit
-        // Write your code here
-        
+    public function main(): void {
+        if ($this->speed > 120) {
+            echo "Speeding ticket!\n";
+        }
     }
 }

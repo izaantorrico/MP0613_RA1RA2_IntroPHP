@@ -9,6 +9,8 @@ class P07_SumOfThreeNumbers {
 
         // Calculate the sum and output the result
         // Write your program here
+        $sum = $numA + $numB + $numC;
+        echo 'The sum of the numbers is ' . $sum . "\n";
        
     }
 }

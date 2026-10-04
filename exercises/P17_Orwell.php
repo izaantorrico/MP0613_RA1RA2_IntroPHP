@@ -1,17 +1,12 @@
 <?php
 
-class P17_Orwell
-{
-    public function main(): void
-    {
-        // Prompt the user for input
-        echo "Give a number: ";
+class P17_Orwell {
+    public function main(): void {
+        echo "Give a number:\n";
+        $number = (int) trim((string) fgets($GLOBALS['STDIN'] ?? STDIN));
 
-        // Get input from the user
-        $input = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
-
-        // Check if the input is exactly 1984
-        // Write your code here
-       
+        if ($number === 1984) {
+            echo "Orwell\n";
+        }
     }
 }

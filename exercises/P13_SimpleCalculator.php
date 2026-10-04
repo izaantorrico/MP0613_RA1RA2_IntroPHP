@@ -2,13 +2,12 @@
 
 class P13_SimpleCalculator {
     public function main(): void {
-        // Define two numbers
-        $numA = 8;
-        $numB = 2;
+        $a = 8;
+        $b = 2;
 
-        // Perform and output the calculations
-        // Write the program here
-       
-       
+        echo "$a + $b = " . ($a + $b) . "\n";
+        echo "$a - $b = " . ($a - $b) . "\n";
+        echo "$a * $b = " . ($a * $b) . "\n";
+        echo "$a / $b = " . number_format($a / $b, 1) . "\n";
     }
 }
